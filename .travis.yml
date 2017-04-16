@@ -36,11 +36,9 @@ script:
   - npm run build -- --prod
 
 after_script:
-  # `spacejam` stuck on running-tests when using `mocha-console-runner`
-  # See: https://github.com/practicalmeteor/spacejam/issues/67
-  # - cd api
-  # - npm run test:spacejam
-  # - cd ..
+  - cd api
+  - npm run test:dispatch:mocha -- --settings private/settings.json
+  - cd ..
   - npm test -- --watch false
   - npm test -- --code-coverage --single-run
   - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js

@@ -5,7 +5,7 @@
   "scripts": {
     "start": "meteor run",
     "test": "meteor test --driver-package=practicalmeteor:mocha",
-    "test:spacejam": "spacejam test --driver-package=practicalmeteor:mocha-console-runner --settings=private/settings.json"
+    "test:dispatch:mocha": "meteor test --once --driver-package dispatch:mocha"
   },
   "dependencies": {
     "babel-runtime": "^6.23.0",
@@ -21,7 +21,6 @@
     "@types/mocha": "^2.2.40",
     "@types/sinon": "^2.1.2",
     "chai": "^3.5.0",
-    "sinon": "^2.1.0",
-    "spacejam": "^1.6.1"
+    "sinon": "^2.1.0"
   }
 }
