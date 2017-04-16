@@ -1,0 +1,27 @@
+{
+  "name": "inflex-api",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "meteor run",
+    "test": "meteor test --driver-package=practicalmeteor:mocha",
+    "test:spacejam": "spacejam test --driver-package=practicalmeteor:mocha-console-runner --settings=private/settings.json"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.23.0",
+    "jsonwebtoken": "^7.3.0",
+    "meteor-node-stubs": "^0.2.6",
+    "meteor-rxjs": "^0.4.7",
+    "rxjs": "^5.3.0"
+  },
+  "devDependencies": {
+    "@types/chai": "^3.5.0",
+    "@types/jsonwebtoken": "^7.2.0",
+    "@types/meteor": "^1.4.1",
+    "@types/mocha": "^2.2.40",
+    "@types/sinon": "^2.1.2",
+    "chai": "^3.5.0",
+    "sinon": "^2.1.0",
+    "spacejam": "^1.6.1"
+  }
+}

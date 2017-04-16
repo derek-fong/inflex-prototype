@@ -1,0 +1,7 @@
+{
+  "private": {
+    "auth": {
+      "clientSecret": "CLIENT_SECRET"
+    }
+  }
+}

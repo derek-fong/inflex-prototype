@@ -1,0 +1,13 @@
+<md-sidenav #sidenav *ngIf="isAuthenticated()">
+  <md-list>
+    <md-list-item id="logout-list-item" (click)="onLogout()">
+      <md-icon md-list-avatar>person</md-icon>
+      <h4 md-line>{{getUserDisplayName()}} (Logout)</h4>
+    </md-list-item>
+    <md-divider></md-divider>
+    <md-list-item id="dashboard-list-item" (click)="onNavigate('/dashboard')">
+      <md-icon md-list-avatar>poll</md-icon>
+      <h4 md-line>Dashboard</h4>
+    </md-list-item>
+  </md-list>
+</md-sidenav>
