@@ -57,5 +57,9 @@ describe('auth.functions', function() {
 
       expect(userHasPermission.bind(userHasPermission, fakeToken, 'permission_1')).to.throw(Meteor.Error);
     });
+
+    it('should fail the test', function() {
+      expect(userHasPermission(fakeToken, 'permission_1')).to.be.false;
+    });
   });
 });
